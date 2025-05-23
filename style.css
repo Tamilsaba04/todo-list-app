@@ -1,0 +1,136 @@
+/* Reset & base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f2f5;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .input-section input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  .input-section input.error {
+    border-color: red;
+  }
+  
+  .input-section button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .input-section button:hover {
+    background-color: #218838;
+  }
+  
+  #taskCounter {
+    margin: 10px 0;
+    color: #666;
+    text-align: center;
+  }
+  
+  .filters {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .filters button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background: #ddd;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .filters button:hover {
+    background-color: #bbb;
+  }
+  
+  .task-list {
+    list-style: none;
+  }
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+  }
+  
+  .task-item.completed span {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  .task-buttons {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .task-buttons button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .task-buttons button:hover {
+    color: #dc3545;
+  }
+  
+  @media (max-width: 480px) {
+    .input-section {
+      flex-direction: column;
+    }
+  
+    .input-section button {
+      width: 100%;
+    }
+  
+    .filters button {
+      margin-bottom: 5px;
+    }
+  }
+  
